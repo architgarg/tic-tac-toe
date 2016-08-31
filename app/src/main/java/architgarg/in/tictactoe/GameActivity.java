@@ -203,6 +203,8 @@ public class GameActivity extends AppCompatActivity {
             resultTextView.setText("Tie!! Better Luck Next Time!");
             disableAllViews();
             resetButton.setVisibility(View.VISIBLE);
+        }else{
+            Log.d("Archit", "else case running again and againnnnnnnnnnnnnnnnnnnnnnnn");
         }
     }
 
@@ -231,11 +233,13 @@ public class GameActivity extends AppCompatActivity {
         view7.setTag(null);
         view8.setTag(null);
         view9.setTag(null);
+        return;
     }
 
     public void displayScores() {
         text1.setText(a + " : " + score1);
         text2.setText(b + " : " + score2);
+        return;
     }
 
     public void disableAllViews() {
@@ -260,6 +264,7 @@ public class GameActivity extends AppCompatActivity {
         view7.setEnabled(true);
         view8.setEnabled(true);
         view9.setEnabled(true);
+        return;
     }
 
     public void setResultText(View view) {
@@ -270,5 +275,6 @@ public class GameActivity extends AppCompatActivity {
             resultTextView.setText(b + " Won!!");
             score2++;
         }
+        return;
     }
 }
